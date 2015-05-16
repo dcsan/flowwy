@@ -1,0 +1,5 @@
+
+"flex": {
+    "git": "https://github.com/IjzerenHein/famous-flex.git",
+    "root": "src"
+  },

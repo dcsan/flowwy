@@ -13,7 +13,7 @@
 		"alias": "famous.polyfills"
 	},
 	"famodev": {
-    "git": "https://github.com/sayawan/famodev.git",
-    "root": "src"
-  }
+	    "git": "https://github.com/sayawan/famodev.git",
+	    "root": "src"
+	}
 }
