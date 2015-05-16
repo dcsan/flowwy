@@ -56,6 +56,8 @@ function createPages() {
 
     this.createPage('about', new AboutView({}));
 
+    this.createPage('header', new HeaderView({}));
+
 }
 
 function showPage() {
