@@ -25,3 +25,5 @@ var reactive = new ReactiveTemplate({
 ```
 
 Look at source `src` folder for more docs
+
+[![Join the chat at https://gitter.im/dcsan/flowwy](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dcsan/flowwy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
