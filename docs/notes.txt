@@ -1,3 +1,13 @@
+works: 
+
+  "flex": {
+    "git": "https://github.com/dcsan/famous-flex.git",
+    "root": "src",
+    "branch": "v031-branch"
+  },
+
+
+
 https://github.com/dcsan/famous-flex/releases/tag/v0.3.2
 
   "flex": {
