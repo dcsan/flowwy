@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"un",
+				"undefined"
+			],
+			[
 				"font",
 				"font-family"
 			],
@@ -510,10 +514,6 @@
 			[
 				"clic",
 				"clickEvent"
-			],
-			[
-				"padd",
-				"padding-top"
 			]
 		]
 	},
@@ -806,10 +806,40 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/dc/dev/ref/flowwy"
+		"/Users/dc/dev/ref/flowwy-dcsan",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/.meteor",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/cards",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/cards/list",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/cards/one",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/layout",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/stories",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/stories/list",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/stories/one"
 	],
 	"file_history":
 	[
+		"/Users/dc/dev/ref/flowwy-dcsan/bin/run.sh",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/cards/list/CardList.js",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/layout/AppView.js",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/router.js",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/stories/one/StoryOneView.coffee",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/stories/list/StoryListView.coffee",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/stories/list/StoryCard.html",
+		"/Users/dc/dev/ref/flowwy-dcsan/README.md",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/cards/list/MiniCard.html",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/cards/list/minicard.styl",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/.meteor/packages",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/index.html",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/layout/tabFooter/TabFooterView.js",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/home/home.html",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/home/HomeView.js",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/stories/list/StoryListView.js",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/main.js",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/.meteor/.famono-base/lib/famous/widgets/TabBar.js",
+		"/Users/dc/dev/ref/flowwy-dcsan/bin/notes.txt",
+		"/Users/dc/dev/ref/flowwy-dcsan/app/client/views/top/TopView.js",
 		"/Users/dc/dev/ref/flowwy-dcsan/bin/flowwy.sublime-project",
 		"/Users/dc/dev/ref/flowwy/client/main.js",
 		"/Users/dc/dev/ref/flowwy/lib/smart.require",
@@ -917,27 +947,7 @@
 		"/Users/dc/dev/shumi/chatU/app/packages/streamer/both/appRoutes.coffee",
 		"/Users/dc/dev/shumi/chatU/package-dev/dclib/client/global-ui-helpers.coffee",
 		"/Users/dc/dev/shumi/chatU/app/packages/ribot-editor/assets/brains.code.dump",
-		"/Users/dc/dev/shumi/chatU/app/packages/mpgames/lib/Profiles.coffee",
-		"/Users/dc/dev/shumi/chatU/app/packages/slots/client/views/slots.jade",
-		"/Users/dc/dev/shumi/chatU/app/packages/pairs/client/lib/GraphMaker.coffee",
-		"/Users/dc/dev/shumi/chatU/app/packages/pairs/client/views/pairsView.jade",
-		"/Users/dc/dev/shumi/chatU/app/packages/pairs/server/pairsServer.coffee",
-		"/Users/dc/dev/shumi/chatU/app/packages/pairs/lib/collections/PairsDeck.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/slidex.jade",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/slidex.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/slidex.styl",
-		"/Users/dc/dev/shumi/chatU/package-dev/chapters/client/views/grid/grid.jade",
-		"/Users/dc/dev/shumi/chatU/package-dev/chapters/client/views/grid/grid.styl",
-		"/Users/dc/dev/shumi/chatU/app/packages/slots/client/views/slots.styl",
-		"/Users/dc/dev/shumi/chatU/app/packages/slots/client/views/slots.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/help.styl",
-		"/Users/dc/dev/shumi/chatU/app/packages/layout/client/shared/buttons.styl",
-		"/Users/dc/dev/shumi/chatU/app/client/widgets/help.jade",
-		"/Users/dc/dev/shumi/chatU/app/client/layouts/ionic/app.scss",
-		"/Users/dc/dev/shumi/chatU/app/packages/streamer/client/admin/admin.jade",
-		"/Users/dc/dev/shumi/chatU/app/packages/streamer/client/admin/admin.styl",
-		"/Users/dc/dev/shumi/chatU/app/packages/cards/lib/Vocab.coffee",
-		"/Users/dc/dev/shumi/chatU/app/client/layouts/navbar/expPoints.styl"
+		"/Users/dc/dev/shumi/chatU/app/packages/mpgames/lib/Profiles.coffee"
 	],
 	"find":
 	{
@@ -1083,6 +1093,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"StoryListView",
+			"CardListView",
+			"Yarisma",
+			"UnitView",
+			"createPages",
+			"HeaderView",
+			"AboutView",
 			"flex.",
 			"middleware",
 			"addLinks",
@@ -1203,14 +1220,7 @@
 			"router",
 			"url",
 			"router",
-			"obj.url",
-			"url:",
-			"CardsReload",
-			"says",
-			"bubbleBg",
-			"layout",
-			"fa-star",
-			"vocabS"
+			"obj.url"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1218,6 +1228,12 @@
 		"regex": false,
 		"replace_history":
 		[
+			"StoryOneView",
+			"StoryListView",
+			"mainView",
+			"StoryListView",
+			"TabFooterView",
+			"CardListView",
 			"toonFont",
 			"tpl",
 			"pulseSize",
@@ -1339,13 +1355,7 @@
 			"say: start",
 			"say: ",
 			"guide says:",
-			"cname",
-			"dcsan",
-			"reelnum",
-			"words",
-			"createSlotsGame",
-			"Slots",
-			""
+			"cname"
 		],
 		"reverse": false,
 		"show_context": false,
@@ -1404,7 +1414,7 @@
 	"project": "flowwy.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1413,6 +1423,26 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"run.",
+				"bin/run.sh"
+			],
+			[
+				"re",
+				"README.md"
+			],
+			[
+				"card",
+				"app/client/views/cards/list/MiniCard.html"
+			],
+			[
+				"tab",
+				"app/.meteor/.famono-base/lib/famous/widgets/TabBar.js"
+			],
+			[
+				"notes",
+				"bin/notes.txt"
+			],
 			[
 				"tod",
 				"docs/TODO.txt"
@@ -1904,26 +1934,6 @@
 			[
 				"sa",
 				"app/client/widgets/says.jade"
-			],
-			[
-				"slots.y",
-				"app/packages/slots/assets/SlotsData.yml"
-			],
-			[
-				"head",
-				"app/client/widgets/headline.styl"
-			],
-			[
-				"palyerac",
-				"app/packages/mpgames/lib/PlayerActions.coffee"
-			],
-			[
-				"coverta",
-				"app/client/widgets/coverTall.jade"
-			],
-			[
-				"cst",
-				"app/packages/streamer/lib/CStreamer.coffee"
 			]
 		],
 		"width": 0.0
