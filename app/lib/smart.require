@@ -18,7 +18,7 @@
   },
 
   "flex": {
-    "path": "/Users/dc/dev/ref/flowwy-dcsan/packages/famous-flex-upstream",
+    "path": "../packages/famous-flex-dcsan",
     "root": "src"
   }
 
