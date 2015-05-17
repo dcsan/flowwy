@@ -15,7 +15,7 @@ _createBack = ->
       undefined
       undefined
     ]
-    content: 'One Story'
+    content: 'story'
     # properties: 'background-color': '#67FBE6'
 
   modifier = new StateModifier
