@@ -91,9 +91,11 @@ function _createScrollView() {
             transform: Transform.translate(0, 0, 1)
         });
 
+        surf.idx = i;
         surf.on('click', function() {
-            url = "/cards/" + i;
-            FlowRouter.go(url);
+            url = "/cards/" + this.idx;
+            console.log("card click", url);
+            // FlowRouter.go(url);
         });
 
         surf.pipe(scrollView);
