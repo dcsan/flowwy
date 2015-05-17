@@ -72,6 +72,7 @@ function createPages() {
 
     this.createPage('cards', new CardListView({}));
     this.createPage('stories', new StoryListView({}));
+    this.createPage('story', new StoryOneView({}));
 
 }
 

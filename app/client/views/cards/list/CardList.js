@@ -37,10 +37,6 @@ function _createBack() {
         }
     });
 
-    surface.on('click', function() {
-        FlowRouter.go('/home');
-    });
-
     var modifier = new StateModifier({
         origin: [0.5, 0.5],
         align: [0.5, 0.5]
@@ -93,6 +89,11 @@ function _createScrollView() {
             // align: [0, 0],
             // origin: [0, 0],
             transform: Transform.translate(0, 0, 1)
+        });
+
+        surf.on('click', function() {
+            url = "/cards/" + i;
+            FlowRouter.go(url);
         });
 
         surf.pipe(scrollView);
