@@ -57,10 +57,10 @@ function _createScrollView() {
         //     }
         // },
         mouseMove: true,
-        direction: 0,
+        direction: 1,
         // autoPipeEvents: true,
       layoutOptions: {
-        itemSize: [300, 300],    // item has width and height of 100 pixels
+        itemSize: [undefined, 200],    // item has width and height of 100 pixels
         margins: [10, 5, 10, 5], // outer margins
         spacing: [10, 10]        // spacing between items
       },
@@ -70,10 +70,10 @@ function _createScrollView() {
     for(var i = 0, surf; i <= 20; i++) {
         surf = new Surface({
             size: [undefined, undefined],
-            content: '',
+            content: '<h2> long headline goes here! and even more' + i + '</h2>',
             classes: [],
             properties: {
-                color: 'white',
+                color: 'black',
                 textAlign: 'center',
                 backgroundColor: 'white'
             }

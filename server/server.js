@@ -2,4 +2,4 @@
  * Created by rubyist on 29/03/15.
  */
 
-console.log("hello webstorm");
+console.log("hello server");
