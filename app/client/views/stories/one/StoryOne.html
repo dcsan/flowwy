@@ -1,0 +1,20 @@
+<template name="StoryOne">
+
+  <div class="vertDiv">
+
+    <h1>{{ title }}</h1>
+    <p>I am a native scrolling div</p>
+
+    <ul>
+      
+    {{#each tiles}}
+      <li>  
+      {{this}}
+      {{name}}
+      </li>
+
+    {{/each}}
+    </ul>
+  </div>
+
+</template>

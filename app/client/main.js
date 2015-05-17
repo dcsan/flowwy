@@ -4,7 +4,11 @@ famous.core.famous;
 
 // Make sure dom got a body...
 Meteor.startup(function() {
+   // dont kill the web
+   famous.core.Engine.setOptions({ appMode: true })
+
    var mainContext = famous.core.Engine.createContext();
+
 
    var mainView = new AppView({});
 

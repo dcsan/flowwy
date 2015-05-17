@@ -18,8 +18,9 @@
   },
 
   "flex": {
-    "path": "../packages/famous-flex-dcsan",
-    "root": "src"
+    "git": "https://github.com/dcsan/famous-flex.git",
+    "root": "src",
+    "branch": "v031-branch"
   }
 
 }

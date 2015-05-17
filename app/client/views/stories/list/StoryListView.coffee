@@ -5,11 +5,9 @@ StateModifier = famous.modifiers.StateModifier
 FlexScrollView = flex.FlexScrollView
 CollectionLayout = flex.layouts.CollectionLayout
 
-###
-# @name StoryListView
-# @constructor
-# @description
-###
+famodev.helpers
+ReactiveTemplate = famodev.ReactiveTemplate
+
 
 _createBack = ->
   surface = new Surface(
@@ -89,8 +87,6 @@ _createScrollView = ->
   @add(scrollView.state).add scrollView
   return
 
-famodev.helpers
-ReactiveTemplate = famodev.ReactiveTemplate
 
 ###
 # @name StoryListView
