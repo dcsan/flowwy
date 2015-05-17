@@ -1,0 +1,3 @@
+[submodule "packages/famous-flex-upstream"]
+	path = packages/famous-flex-upstream
+	url = git@github.com:IjzerenHein/famous-flex.git
