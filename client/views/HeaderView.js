@@ -5,8 +5,8 @@ var EventHandler  = famous.core.EventHandler;
 var StateModifier = famous.modifiers.StateModifier;
 var InputSurface  = famous.surfaces.InputSurface;
 
-var LayoutController   = flex.LayoutController;
-var NavBarLayout       = flex.layouts.NavBarLayout;
+flex.widgets.styles;
+var TabBar = flex.widgets.TabBar;
 
 /*
  * @name HeaderView
@@ -17,30 +17,18 @@ var NavBarLayout       = flex.layouts.NavBarLayout;
 HeaderView = function() {
     View.apply(this, arguments);
 
-    var layout = new LayoutController({
-        layout: NavBarLayout,
-        layoutOptions: {
-            margins: [5, 15, 35, 54],
-            itemSpacer: 20,
-        },
-        dataSource: {
-            background: new Surface({properties: {
-                backgroundColor: '#3581FF',
-            }}),
-            title: new Surface({content: 'Yarisma',
-                properties: {
-                    textAlign: 'center',
-                    fontSize: '2em',
-                }
-            }),
-            leftItems:[
-            ],
-            rightItems: [
-            ]
+    var tabBar = new TabBar({
+        createRenderables: {
+            background: true,
+            selectedItemOverlay: true
         }
     });
-
-    this.add(layout);
+    tabBar.setItems([
+        'one',
+        'two',
+        'three'
+    ]);
+    this.add(tabBar); // add to the render-tree
 }
 
 HeaderView.prototype = Object.create(View.prototype);
