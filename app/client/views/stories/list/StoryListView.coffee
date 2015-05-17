@@ -9,7 +9,7 @@ famodev.helpers
 ReactiveTemplate = famodev.ReactiveTemplate
 
 
-_createBack = ->
+_createBack = (tree, sc) ->
   surface = new Surface(
     size: [
       undefined
@@ -18,16 +18,11 @@ _createBack = ->
     content: 'Hello from About View'
     properties: 'background-color': '#67FBE6' )
   modifier = new StateModifier(
-    origin: [
-      0.5
-      0.5
-    ]
-    align: [
-      0.5
-      0.5
-    ])
-  @add(modifier).add surface
-  return
+    origin: [ 0.5, 0.5 ]
+    align: [0.5, 0.5])
+  tree.add(modifier).add surface
+  surface.pipe(sc)
+  return surface
 
 _createScrollView = ->
   surfaces = []
@@ -36,9 +31,9 @@ _createScrollView = ->
     mouseMove: true
     direction: 1
     layoutOptions:
-      itemSize: [ undefined, 150 ]
-      margins: [0, 0, 0, 0 ]
-      spacing: [10, 5]
+      itemSize: [ true, 150 ]
+      margins: [0, 0, 0, 10 ]
+      spacing: [5, 5]
     dataSource: surfaces)
   i = 0
   surf = undefined
@@ -85,7 +80,7 @@ _createScrollView = ->
       0.5
     ])
   @add(scrollView.state).add scrollView
-  return
+  return scrollView
 
 
 ###
@@ -96,8 +91,8 @@ _createScrollView = ->
 
 @StoryListView = ->
   View.apply this, arguments
-  _createBack.call this
-  _createScrollView.call this
+  sc = _createScrollView.call this
+  _createBack(this, sc)
   return
 
 StoryListView.prototype = Object.create(View.prototype)

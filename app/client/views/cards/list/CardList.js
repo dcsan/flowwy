@@ -17,9 +17,8 @@ var ReactiveTemplate = famodev.ReactiveTemplate;
 
 CardListView = function() {
     View.apply(this, arguments);
-
-    _createBack.call(this);
-    _createScrollView.call(this);
+    sc = _createScrollView.call(this);
+    _createBack(this, sc);
 }
 
 CardListView.prototype = Object.create(View.prototype);
@@ -28,7 +27,7 @@ CardListView.prototype.constructor = CardListView;
 CardListView.DEFAULT_OPTIONS = {
 };
 
-function _createBack() {
+function _createBack(tree, scrollView) {
     var surface = new Surface({
         size: [undefined, undefined],
         content: "Hello from About View",
@@ -42,7 +41,9 @@ function _createBack() {
         align: [0.5, 0.5]
     });
 
-    this.add(modifier).add(surface);
+    tree.add(modifier).add(surface);
+
+    surface.pipe(scrollView);
 }
 
 function _createScrollView() {
@@ -66,7 +67,7 @@ function _createScrollView() {
       dataSource: surfaces
     });
 
-    for(var i = 0, surf; i <= 20; i++) {
+    for(var i = 0, surf; i <= 100; i++) {
         var node = new famous.core.RenderNode();
 
         cardData = {
@@ -112,4 +113,5 @@ function _createScrollView() {
     });
 
     this.add(scrollView.state).add(scrollView);
+    return scrollView;
 }
