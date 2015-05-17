@@ -32,7 +32,7 @@ AppView = function() {
         footerSize: 50
     });
 
-    this.layout.header.add(new HeaderView());
+    this.layout.footer.add(new HeaderView());
 
     this.content = new RenderController();
     this.layout.content.add(this.content);
@@ -65,8 +65,7 @@ function createPages() {
     }));
 
     this.createPage('about', new AboutView({}));
-
-    this.createPage('header', new HeaderView({}));
+    this.createPage('unit', new UnitView({}));
 
 }
 

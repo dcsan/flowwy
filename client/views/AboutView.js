@@ -6,6 +6,9 @@ var StateModifier = famous.modifiers.StateModifier;
 var FlexScrollView = flex.FlexScrollView;
 var CollectionLayout = flex.layouts.CollectionLayout;
 
+famodev.helpers;
+var ReactiveTemplate = famodev.ReactiveTemplate;
+
 /*
  * @name AboutView
  * @constructor
@@ -60,17 +63,18 @@ function _createScrollView() {
         direction: 1,
         // autoPipeEvents: true,
       layoutOptions: {
-        itemSize: [undefined, 200],    // item has width and height of 100 pixels
+        itemSize: [170,170],    // item has width and height of 100 pixels
         margins: [10, 5, 10, 5], // outer margins
         spacing: [10, 10]        // spacing between items
       },
       dataSource: surfaces
     });
 
-    for(var i = 0, surf; i <= 20; i++) {
-        surf = new Surface({
+    for(var i = 0, surf; i <= 200; i++) {
+        surf = new ReactiveTemplate({
             size: [undefined, undefined],
-            content: '<h2> long headline goes here! and even more' + i + '</h2>',
+            template: Template.card,
+            data: {num: i+1},
             classes: [],
             properties: {
                 color: 'black',
