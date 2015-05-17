@@ -4,13 +4,13 @@
     {
       "folder_exclude_patterns":
       [
-        ".meteor/local",
+        "app/.meteor/local",
         // ".meteor/.famono*",
         "/packages/*/.*",
         ".git"
       ],
       "follow_symlinks": true,
-      "path": "/Users/dc/dev/ref/flowwy"
+      "path": "/Users/dc/dev/ref/flowwy-dcsan"
     },
   ]
 }

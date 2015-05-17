@@ -6,18 +6,18 @@ famous.core.famous;
 Meteor.startup(function() {
    var mainContext = famous.core.Engine.createContext();
 
-   var Yarisma = new AppView({});
+   var mainView = new AppView({});
 
    mainContext.setPerspective(1000);
 
-   mainContext.add(Yarisma);
+   mainContext.add(mainView);
 
    FlowRouter.middleware(trackingMiddleware);
 
    function trackingMiddleware(path, next) {
         var name = path.split('/');
         console.log("tracking: " + name[1].capitalize() + "View.js");
-        Yarisma.trigger('route changed', name[1]);
+        mainView.trigger('route changed', name[1]);
         next();
    }
 });

@@ -28,14 +28,20 @@ AppView = function() {
     this._currentPage = undefined;
 
     this.layout = new HeaderFooterLayout({
-        headerSize: 100,
+        headerSize: 50,
         footerSize: 50
     });
 
-    this.layout.footer.add(new HeaderView());
+    var footer = new TabFooterView();
 
+    var front = famous.utilities.Utility.transformInFront
+    var front = new StateModifier({
+        // transform: Transform.inFront
+        transform: Transform.translate(0,0,2)
+    });
+    this.layout.footer.add(front).add(footer);
     this.content = new RenderController();
-    this.layout.content.add(this.content);
+    this.layout.content.add(famous.utilities.Utility.transformBehind).add(this.content);
 
     this.add(this.layout);
 
@@ -64,14 +70,14 @@ function createPages() {
         run: false
     }));
 
-    this.createPage('about', new AboutView({}));
-    this.createPage('unit', new UnitView({}));
+    this.createPage('cards', new CardListView({}));
+    this.createPage('stories', new StoryListView({}));
 
 }
 
+// main method to navigate between pages
 function showPage() {
     this.eventInput.on('route changed', function(name) {
-
         var view = this._pages[name];
 
         if (view) {
@@ -85,3 +91,5 @@ function showPage() {
 
     }.bind(this));
 }
+
+
