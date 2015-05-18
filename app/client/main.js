@@ -6,9 +6,11 @@ famous.core.famous;
 Meteor.startup(function() {
    // dont kill the web
    // this can only happen before the engine is initialised
-   famous.core.Engine.setOptions({ appMode: true })
+   famous.core.Engine.setOptions({ appMode: false })
 
-   var mainContext = famous.core.Engine.createContext();
+   elem = document.getElementById("engine");
+   // elem = false
+   var mainContext = famous.core.Engine.createContext(elem);
    var mainView = new AppView({});
 
    mainContext.setPerspective(1000);

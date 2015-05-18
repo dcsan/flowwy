@@ -30,7 +30,7 @@ CardListView.DEFAULT_OPTIONS = {
 function _createBack(tree, scrollView) {
     var surface = new Surface({
         size: [undefined, undefined],
-        content: "Hello from About View",
+        content: "CardList background",
         properties: {
             'background-color': 'yellow'
         }
@@ -38,7 +38,9 @@ function _createBack(tree, scrollView) {
 
     var modifier = new StateModifier({
         origin: [0.5, 0.5],
-        align: [0.5, 0.5]
+        align: [0.5, 0.5],
+        // transform: Transform.behind
+        transform: Transform.translate(0,0,-1)
     });
 
     tree.add(modifier).add(surface);
@@ -109,7 +111,9 @@ function _createScrollView() {
 
     scrollView.state = new StateModifier({
         origin: [0.5, 0.5],
-        align: [0.5, 0.5]
+        align: [0.5, 0.5],
+        // transform: Transform.inFront
+        transform: Transform.translate(0,0,1)
     });
 
     this.add(scrollView.state).add(scrollView);

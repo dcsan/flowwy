@@ -33,8 +33,7 @@ AppView = function() {
     });
 
     var footer = new TabFooterView();
-
-    var front = famous.utilities.Utility.transformInFront
+    // var front = famous.utilities.Utility.transformInFront
     var front = new StateModifier({
         // transform: Transform.inFront
         transform: Transform.translate(0,0,2)
@@ -42,7 +41,6 @@ AppView = function() {
     this.layout.footer.add(front).add(footer);
     this.content = new RenderController();
     this.layout.content.add(famous.utilities.Utility.transformBehind).add(this.content);
-
     this.add(this.layout);
 
     createPages.call(this);

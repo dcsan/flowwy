@@ -38,6 +38,7 @@ TabFooterView = function() {
 
     tabBar.state = new StateModifier({
         transform: Transform.inFront
+        // transform: Transform.translate(0,0,2)
     });
     // this.add(tabBar); // add to the render-tree
     this.add(tabBar.state).add(tabBar);
