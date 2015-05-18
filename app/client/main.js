@@ -6,7 +6,7 @@ famous.core.famous;
 Meteor.startup(function() {
    // dont kill the web
    // this can only happen before the engine is initialised
-   famous.core.Engine.setOptions({ appMode: false })
+   famous.core.Engine.setOptions({ appMode: true })
 
    var mainContext = famous.core.Engine.createContext();
    var mainView = new AppView({});
