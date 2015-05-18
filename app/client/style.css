@@ -12,3 +12,8 @@ body {
   padding: 0px;
   margin: 0px;
 }
+
+.background {
+  z-index: -1;
+  font-size: 24px;
+}

@@ -31,6 +31,7 @@ function _createBack(tree, scrollView) {
     var surface = new Surface({
         size: [undefined, undefined],
         content: "CardList background",
+        classes: ["background"],
         properties: {
             'background-color': 'yellow'
         }
