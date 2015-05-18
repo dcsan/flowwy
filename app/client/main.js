@@ -5,15 +5,13 @@ famous.core.famous;
 // Make sure dom got a body...
 Meteor.startup(function() {
    // dont kill the web
-   famous.core.Engine.setOptions({ appMode: true })
+   // this can only happen before the engine is initialised
+   famous.core.Engine.setOptions({ appMode: false })
 
    var mainContext = famous.core.Engine.createContext();
-
-
    var mainView = new AppView({});
 
    mainContext.setPerspective(1000);
-
    mainContext.add(mainView);
 
    FlowRouter.middleware(trackingMiddleware);
