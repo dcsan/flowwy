@@ -11,16 +11,15 @@ ReactiveTemplate = famodev.ReactiveTemplate
 
 _createBack = (tree, sc) ->
   surface = new Surface
-    size: [
-      undefined
-      undefined
-    ]
-    content: 'Hello from About View'
+    size: [undefined, 50]
+    content: 'Storylist'
     properties: 'background-color': '#67FBE6'
 
-  modifier = new StateModifier(
-    origin: [ 0.5, 0.5 ]
-    align: [0.5, 0.5])
+  modifier = new StateModifier
+    origin: [ 1, 0 ]
+    align: [0.5, 0]
+    transform: Transform.behind
+
   tree.add(modifier).add surface
   surface.pipe(sc)
   return surface

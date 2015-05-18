@@ -12,16 +12,18 @@ ReactiveTemplate = famodev.ReactiveTemplate
 _createBack = ->
   surface = new Surface
     size: [
-      undefined
-      undefined
+      100
+      100
     ]
-    content: 'story'
+    content: 'back'
     # properties: 'background-color': '#67FBE6'
 
   modifier = new StateModifier
     origin: [0.5, 0.5]
     align: [0.5, 0.5]
-  @add(modifier).add surface
+    transform: Transform.behind
+
+  @add(modifier).add(surface)
   return
 
 _createMain = (tree) ->
@@ -45,9 +47,13 @@ _createMain = (tree) ->
   # TODO routing from story list to story detail page
   surf.on('click', ->
     console.log("url is", this.url)
-    FlowRouter.go(this.url);
+    # FlowRouter.go(this.url);
   )
-  tree.add(surf)
+
+  modifier = new StateModifier
+    transform: Transform.inFront
+
+  tree.add(modifier).add(surf)
   return
 
 
